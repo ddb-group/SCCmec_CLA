@@ -1,0 +1,34 @@
+# SET UP 
+
+[configuration]
+# external programs
+prokka = helpers/programs/prokka-1.12/bin/prokka
+blastn = helpers/programs/ncbi-blast-2.6.0+/bin/blastn
+blastp = helpers/programs/ncbi-blast-2.6.0+/bin/blastp
+makeblastdb = helpers/programs/ncbi-blast-2.6.0+/bin/makeblastdb
+mash = helpers/programs/mash-Linux64-v1.1.1/mash
+
+# support databases
+attr_db = helpers/support_data/attr_database/update_attR_database
+orfX = helpers/support_data/orfx.fasta
+pbp2a = helpers/support_data/pbp2a.fasta
+ccr = helpers/support_data/ccr.fasta
+core_db = helpers/support_data/core_database/core_db
+base_network = helpers/support_data/network_k32_s100000_267_SCCmec.eda
+chunk = helpers/support_data/sketch_mash_268.msh
+threshold = 0.9860
+
+# core analysis
+core_proteins_sccmec = helpers/support_data/core_proteins/info.txt
+core_dir = helpers/support_data/core_proteins/
+
+# dir with sequence(s) to analize
+input_dir = INPUT/
+# outputs
+output =OUTPUT/
+prefix_output = output
+
+# kNN data
+features = helpers/support_data/output_mash_distance_columns.txt
+labels = helpers/support_data/sccmec_specific_type_labels.txt
+
